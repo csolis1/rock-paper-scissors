@@ -1,7 +1,7 @@
 function GameBoard() {
-    return (
-        <div id="board">Board</div>
-
+    return(
+        <div id="board"> Game Board </div>
+        
     )
 }
 
