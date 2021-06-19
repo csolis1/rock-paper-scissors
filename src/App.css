@@ -10,7 +10,7 @@ body {
   
 }
 h1 {
-  margin-left: 13%;
+  margin-left: 16%;
   display: block;
   position: relative;
   font-size: 100px;
@@ -125,5 +125,34 @@ h1::after {
   height: 5%;
   width:5%;
  padding: 5px 5px 5px 5px;
+ 
+}
+
+#window{
+  margin: auto;
+  width: 785px;
+  height: 350px;
+  border: 1px solid rgb(158, 83, 201)
+}
+
+span{
+  border: 1px solid rgb(158, 83, 201);
+  font-size: small;
+  padding: 1px;
+  
+}
+
+#top{
+  padding: 1%;
+}
+
+#pickObject{
+  margin-top: 33%;
+  position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ border-top: 1px solid rgb(145, 102, 173);
+ height: 90px;
  
 }
