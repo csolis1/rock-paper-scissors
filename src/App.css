@@ -1,38 +1,106 @@
-.App {
+body {
+  background-color: #222;
+  color: #fff;
+  font-family: 'DotGothic16', sans-serif;
+  font-weight: 700;
+}
+.container {
+  width: auto;
+  margin: 50%;
+}
+
+h1 {
+  margin-left: 13%;
+  display: block;
+  position: relative;
+  font-size: 100px;
+  background: linear-gradient(to bottom, #00f2ff 0%, #e2fbff 50%, #0a343f 51%, #0094f7 100%);
+  background-blend-mode: multiply;
+  background-size: 10px 100px;
+  background-repeat: repeat;
+  line-height: 1;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h1::before {
+  background: none;
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  background-image: url('https://i.imgur.com/Ym9HCsT.gif');
+  background-blend-mode: screen;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0.5;
+}
+h1::after {
+  background: none;
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-shadow: 1px -1px 0 rgba(255, 255, 255, 0.5), 3px 1px 3px rgba(255, 0, 255, 0.85), -3px -2px 3px rgba(0, 0, 255, 0.85), 1px -2px 0 rgba(255, 255, 255, 0.8);
+  z-index: -2;
+}
+
+#score{
+  margin:auto;
   text-align: center;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  color: teal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#board{
+  margin: auto;
+  width: 800px;
+  height:500px;
+  border: 2px solid;
+  color:blueviolet
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#instructions{
+  font-family: 'DotGothic16', sans-serif;
+  margin: 2%;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 120px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#reset{
+  font-family: 'DotGothic16', sans-serif;
+  align-content: center;
+  width: 80px;
+  color:cyan;
+  background-color: black;
+}
+
+#resetDiv{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 200px;
+
 }
 
-.App-link {
-  color: #61dafb;
+#footer{
+  text-align:center;
+  margin:auto;
+  position: bottom;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid rgb(215, 206, 240);
+  background-color: rgb(255, 255, 255);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#footer img{
+  margin:5px;
+  height: 5%;
+  width:5%;
+ padding: 5px 5px 5px 5px;
 }
