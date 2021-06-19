@@ -1,8 +1,8 @@
 function Instructions() {
-    return (
-        <button id="instructions">How to Play</button>
-
+    return(
+        <button id="instructions">How to play</button>
     )
+
 }
 
 export default Instructions
