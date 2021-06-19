@@ -1,24 +1,23 @@
-import Header from './Components/Header';
-import Score from './Components/Score'
-import Instructions from './Components/Instructions'
-import GameBoard from './Components/GameWindow'
-import Reset from './Components/Reset'
-import Footer from './Components/Footer';
-import logo from './logo.svg';
+import Footer from './components/Footer';
+import GameBoard from './components/GameWindow';
+import Header from './components/Header';
+import Instructions from './components/Instructions';
+import Reset from './components/Reset';
+import Score from './components/Score';
 import './App.css';
-
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Score/>
-      <Instructions/>
-      <GameBoard/>
-      <Reset/>
-      <Footer/>
+      <Header />
+      <Score />
+      <Instructions />
+      <GameBoard />
+      <Reset />
+      <Footer />
     </div>
   );
 }
 
 export default App;
+
